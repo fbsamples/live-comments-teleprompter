@@ -1,0 +1,146 @@
+/**
+ * Copyright 2016-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 4em;
+  background: #000;
+  color: #fff;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-size: 1em;
+  background: #666;
+  color: #fff;
+  border: none;
+  border-bottom: 0.1em solid #3af;
+  cursor: pointer;
+}
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #000;
+  border: 0.1em solid #fff;
+  color: #fff;
+}
+progress::-webkit-progress-bar {
+  background-color: #000;
+}
+progress::-webkit-progress-value {
+  background-color: #fff;
+}
+progress::-moz-progress-bar {
+  background-color: #fff;
+}
+
+footer {
+  display: flex;
+  font-size: 0.9em;
+}
+
+.main {
+	display: flex;
+  flex-grow: 1;
+  flex-basis: 100%;
+  overflow: hidden;
+}
+
+.controls {
+	margin-left: 0.5em;
+	font-size: 0.9em;
+	flex-basis: 0;
+}
+
+.controls > * {
+	width: 100%;
+	margin-bottom: 0.5em;
+}
+
+.controls button {
+	background: none;
+	border: none;
+	text-align: center;
+}
+
+.controls button:hover {
+	background: #666;
+}
+
+.comments {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 100%;
+}
+.comment {
+  margin: 1em 0;
+  width: 100%;
+}
+.comment:first-of-type {
+  margin-top: 0;
+}
+.comment h2 {
+  display: inline-block;
+  font-size: 1.1em;
+  margin: 0;
+}
+.comment .time {
+  float: right;
+  text-align: right;
+  color: #0ff;
+}
+.comment p {
+  margin: 0;
+}
+
+.error {
+  color: #f4a
+}
+
+.login {
+  display: none;
+  flex-grow: 1;
+}
+
+.countdown {
+  margin-top: auto;
+  width: 4em;
+  height: 0.6em;
+  justify-content: flex-end;
+}
+
+.reactions {
+  display: inline-block;
+  flex-grow: 1;
+}
+.reactionGroup {
+  display: inline-block;
+  height: 1em;
+  margin-right: 1em;
+}
+.reactionIcon {
+  height: 1em;
+  margin-right: 0.5em;
+  vertical-align: text-top;
+}
