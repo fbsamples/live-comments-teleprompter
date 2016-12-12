@@ -126,7 +126,7 @@ function getReactions(id) {
     
     reactionRes.data.forEach(function (reaction) {
       reaction.type = reaction.type.toLowerCase();
-      reactions[reaction.type] = video.reactions[reaction.type] || 0;
+      reactions[reaction.type] = reactions[reaction.type] || 0;
       reactions[reaction.type]++;
     });
     
