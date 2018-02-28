@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/**
+ *  Copyright (c) 2018-present, Facebook, Inc.
+ *  All rights reserved.
+ *
+ *  This source code is licensed under the license found in the
+ *  LICENSE file in the root directory of this source tree.
+ */
+
+/*
+ * This stylesheet contains common styles between the moderator
+ * panel, and the choose-a-post interface.  These styles do not
+ * apply to the teleprompter itself, which has its own separate
+ * sheet, teleprompter.css.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  background: #2c3e50;
+  color: #ecf0f1;
+  font-family: sans-serif;
+}
+
+h1 {
+	display: flex;
+	align-items: center;
+}
+
+h1 img {
+	height: 1.25em;
+	margin-right: 0.5em;
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+tr:nth-child(even) {
+  color: #fff;
+  background: #7f8c8d;
+}
+tr:nth-child(odd) {
+  color: #fff;
+  background: #95a5a6;
+}
+
+td {
+  padding: 0.5em;
+}
+
+input,
+textarea {
+  font-size: 1em;
+}
+
+button,
+.button,
+input[type="submit"] {
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  padding: 1em 2em;
+  background: #3498db;
+  color: #fff;
+  cursor: pointer;
+}
+
+input.active,
+button.active,
+.button.active,
+button:hover {
+  outline: 0.2em solid #fff;
+}
+
+input[type="text"],
+input[type="url"],
+textarea {
+  padding: 1em 0.3em;
+  width: 30em;
+  border: none;
+}
+
+td input[type="text"],
+td input[type="url"],
+td textarea {
+  width: 100%;
+}

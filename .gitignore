@@ -1,0 +1,3 @@
+node_modules/
+.vagrant/
+src/js/*-bundle.js*

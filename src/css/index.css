@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/**
+ *  Copyright (c) 2018-present, Facebook, Inc.
+ *  All rights reserved.
+ *
+ *  This source code is licensed under the license found in the
+ *  LICENSE file in the root directory of this source tree.
+ */
+
+ul.posts {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.posts li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+ul.posts li:nth-child(even) {
+  color: #fff;
+  background: #7f8c8d;
+}
+ul.posts li:nth-child(odd) {
+  color: #fff;
+  background: #95a5a6;
+}
+
+ul.posts li a {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	margin: 0.2em;
+	padding: 1em 0.5em;
+	text-overflow: ellipsis;
+	overflow: hidden;
+  word-wrap: no-wrap;
+  white-space: nowrap;
+}
+
+.page {
+	width: 100%;
+	padding: 1em;
+}
+
+.page[data-page-name="teleprompter"] {
+  padding: 0;
+}
