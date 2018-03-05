@@ -1,7 +1,7 @@
 # Live Comments Teleprompter
 Display live comments and reactions for Facebook posts in an easy-to-read way.
 
-![Live Comments Teleprompter Screenshot](doc/screenshot-main.png)
+![Live Comments Teleprompter Usage](doc/readme-header.jpg)
 
 ## Getting Started
 
@@ -67,6 +67,8 @@ Use the ＋and － buttons, or your browser's zoom controls, to increase or decr
 Use the ↔ and ↕ buttons to toggle mirroring horizontally and vertically.  This may be needed if you are using a proper teleprompter mirror rig.
 
 Use the ⿹ to toggle full-screen mode.
+
+![Live Comments Teleprompter Screenshot](doc/screenshot-main.png)
 
 ### Moderation
 
