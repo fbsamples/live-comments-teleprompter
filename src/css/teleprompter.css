@@ -1,5 +1,7 @@
+@charset "UTF-8";
+
 /**
- * Copyright 2016-present, Facebook, Inc.
+ * Copyright 2018-present, Facebook, Inc.
  * All rights reserved.
  *
  * This source code is licensed under the license found in the
@@ -10,6 +12,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 6vmin;
+}
+
 html,
 body {
   height: 100%;
@@ -18,7 +24,6 @@ body {
 
 body {
   font-family: sans-serif;
-  font-size: 4em;
   background: #000;
   color: #fff;
   padding: 0.5em;
@@ -100,18 +105,26 @@ footer {
 .comment:first-of-type {
   margin-top: 0;
 }
-.comment h2 {
+.comment [data-content="name"] {
   display: inline-block;
   font-size: 1.1em;
   margin: 0;
 }
-.comment .time {
+.comment [data-content="time"] {
   float: right;
   text-align: right;
-  color: #0ff;
+  color: #3498db;
 }
 .comment p {
   margin: 0;
+}
+.noComments {
+	margin: 1em 0;
+	width: 100%;
+	color: #f34;
+}
+.noComments h2 {
+	margin: 0;
 }
 
 .error {
@@ -138,6 +151,9 @@ footer {
   display: inline-block;
   height: 1em;
   margin-right: 1em;
+}
+.reactionGroup[data-value="0"] {
+	display: none;
 }
 .reactionIcon {
   height: 1em;

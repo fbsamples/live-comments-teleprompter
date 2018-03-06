@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Facebook Live Comments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/teleprompter.css" />
+    <script src="js/teleprompter-bundle.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <section class="login">To use this application, you must <button data-action="login">connect with Facebook</button>.</section>
+      <section class="comments">Loading...</section>
+      <section class="controls">
+        <button data-action="back">‹</button>
+        <button data-action="moderate">≡</button>
+        <button data-action="zoomUp">＋</button>
+        <button data-action="zoomDown">－</button>
+        <button data-action="flipHorizontal">↔</button>
+        <button data-action="flipVertical">↕</button>
+        <button data-action="fullscreen">⿹</button>
+      </section>
+    </div>
+    <footer>
+      <div class="reactions">
+        <div class="reactionGroup" data-reaction="LIKE" data-value="0"><img src="img/reaction-like.svg" alt="Like" class="reactionIcon" /><span class="count"></span></div>
+        <div class="reactionGroup" data-reaction="LOVE" data-value="0"><img src="img/reaction-love.svg" alt="Love" class="reactionIcon" /><span class="count"></span></div>
+        <div class="reactionGroup" data-reaction="HAHA" data-value="0"><img src="img/reaction-haha.svg" alt="Ha Ha" class="reactionIcon" /><span class="count"></span></div>
+        <div class="reactionGroup" data-reaction="WOW" data-value="0"><img src="img/reaction-wow.svg" alt="Wow" class="reactionIcon" /><span class="count"></span></div>
+        <div class="reactionGroup" data-reaction="SAD" data-value="0"><img src="img/reaction-sad.svg" alt="Sad" class="reactionIcon" /><span class="count"></span></div>
+        <div class="reactionGroup" data-reaction="ANGRY" data-val1ue="0"><img src="img/reaction-angry.svg" alt="Angry" class="reactionIcon" /><span class="count"></span></div>
+      </div>
+      <progress class="countdown" value="0" max="30"></progress>
+    </footer>
+    
+    <template id="comment">
+      <div class="comment">
+        <h2 data-content="name"></h2>
+        <p data-content="time"></p>
+        <p data-content="message"></p>
+      </div>
+    </template>
+    
+    <template id="noComments">
+      <div class="noComments">
+        <h2>Waiting for comments...</h2>
+      </div>
+    </template>
+    
+    <template id="textMode">
+      <div class="textMode"></div>
+    </template>
+  </body>
+</html>

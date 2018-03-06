@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Moderate - Live Comments Teleprompter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/moderate.css" />
+    <script src="js/moderate-bundle.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="preview">
+        <iframe src="teleprompter.html#slave"></iframe>
+      </div>
+      <div class="fullWidth">
+        <h1><img src="img/F_icon.svg" alt="Facebook Icon" />Live Comments Teleprompter</h1>
+        <h2 data-content="postTitle"></h2>
+        <div class="controls">
+          <div class="buttonGroup">
+            <span class="buttonGroupLabel">Refresh</span>
+            <button data-action="refreshTeleprompters">Now</button>
+            <button data-action="toggleAutoRefresh">Auto</button>
+          </div>
+          <div class="buttonGroup">
+            <span class="buttonGroupLabel">Font Size</span>
+            <button data-action="zoomUp">＋</button>
+            <button data-action="zoomDown">－</button>
+          </div>
+          <div class="buttonGroup">
+            <span class="buttonGroupLabel">Orientation</span>
+            <button data-action="flipHorizontal">↔</button>
+            <button data-action="flipVertical">↕</button>
+          </div>
+        </div>
+      </div>
+      
+    </header>
+    <section data-content="comments">
+      <table>
+        <thead>
+          <tr>
+            <td>
+              <input type="text" name="name" form="newComment" placeholder="Name" />
+            </td>
+            <td>
+              <input type="text" name="message" form="newComment" placeholder="Comment" />
+            </td>
+            <td colspan="2" class="control">
+              <form name="newComment" id="newComment">
+                <input type="submit" name="submit" data-priority="0" value="Add"/>
+              </form>
+            </td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <template id="commentRow">
+      <tr>
+        <td data-column="name"></td>
+        <td data-column="message"></td>
+        <td class="control">
+          <button data-action="prioritize">⇡</button>
+        </td>
+        <td class="control">
+          <button data-action="delete">×</button>
+        </td>
+      </tr>
+    </template>
+    
+  </body>
+</html>

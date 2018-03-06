@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Live Comments Teleprompter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script src="js/index-bundle.js"></script>
+  </head>
+  <body>
+  
+    <div class="page" data-page-name="login">
+      <h2>Log in to Facebook</h2>
+      <button data-action="login">Log in</button>
+    </div>
+    
+    <div class="page" data-page-name="choosePost">
+      <h1><img src="img/F_icon.svg" alt="Facebook Icon" />Live Comments Teleprompter</h1>
+      <h2>Open Post URL</h2>
+      <form name="openUrl">
+        <input type="url" name="url" placeholder="URL to post on Facebook.com" />
+        <input type="submit" value="Open" />
+      </form>
+      <hr />
+      <div class="accounts"></div>
+    </div>
+    
+    <iframe class="page" data-page-name="teleprompter" src="teleprompter.html"></iframe>
+    
+    <template id="account">
+      <h2></h2>
+      <p class="noPosts">No posts for this account.</p>
+      <ul class="posts"></ul>
+    </template>
+
+    <template id="postListItem">
+      <li>
+        <a></a>
+      </li>
+    </template>
+
+  </body>
+</html>
