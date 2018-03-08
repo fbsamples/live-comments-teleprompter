@@ -44,7 +44,7 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      FB_APP_ID: process.env.FB_APP_ID
+      FB_APP_ID: JSON.stringify(process.env.FB_APP_ID)
     })
   ]
 };
