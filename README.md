@@ -36,11 +36,11 @@ Linux / OS X:
 
     export FB_APP_ID=12345
 
-Next, use Webpack to run the build:
+Next, to run the build:
 
-    webpack
+    npm run build
 
-(You can also use the `--watch` flag if you're making modifications and want to build as you do that.  You can use `-p` to minify the output bundles.)
+(You can also use the flags `-- --watch` if you're making modifications and want the build to run automatically when files change.  You can use `-- -p` to minify the output bundles.  Only one `--` flag is needed before other flags.)
 
 Finally, deploy everything in `/src` to your web server.
 
