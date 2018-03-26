@@ -48,15 +48,15 @@ Finally, deploy everything in `/src` to your web server.
 
 ### Post Selection
 
-Choose a post to display comments and reactions for.  Your and your pages' most recent posts will be displayed.  Alternatively, you can paste a URL to many types of Facebook content.
+Choose a post to display comments and reactions for.  Your and your pages' most recent posts will be displayed.
 
-You may also paste URLs to public content from other people and pages.
+Alternatively, you can paste a URL to many types of Facebook content.  You may also paste URLs to public content from other people and pages.  (Note that not all Facebook post URL formats are supported.  As there is no unified URL format, nor official API for parsing a Facebook URL, this app uses a sort of naive parsing that works for most posts.  If your URL is not working, first make sure your URL is for the post itself and not a "share" of the post.  To do this, on Facebook, click the timestamp for the post.  You will eventually be taken to a page that only your post appears on.  This is the URL most likely to work with the Live Comments Teleprompter.  If you have done this, your post is public, and your URL still does not work, please open an issue for it.)
 
 ![Post Selection Screenshot](doc/screenshot-choose-post.png)
 
 ### Teleprompter
 
-Comments for your post will be loaded and displayed.
+Comments for your post will be loaded and displayed.  If available, the names of those who made the comments will also be displayed.  (At times, particularly for comments on Page posts, you will see "Facebook User" for the names.  This is due to the privacy settings of the commentators, where by default their name is not made available to the app.)
 
 The progress bar in the bottom-right of the view indicates how much time you have before the next batch of comments are loaded.  This helps control the flow of comments during very popular videos.  Click the progress bar to immediately load new comments.  You may also use a Bluetooth camera button to immediately load new comments.
 
